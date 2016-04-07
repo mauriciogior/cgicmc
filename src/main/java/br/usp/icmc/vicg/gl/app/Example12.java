@@ -107,8 +107,8 @@ public class Example12 extends KeyAdapter implements GLEventListener {
 
     projectionMatrix.loadIdentity();
     projectionMatrix.ortho(
-            -delta, delta, 
-            -delta, delta, 
+            -delta, delta,
+            -delta, delta,
             -2 * delta, 2 * delta);
     projectionMatrix.bind();
 
@@ -119,8 +119,8 @@ public class Example12 extends KeyAdapter implements GLEventListener {
 
     viewMatrix.loadIdentity();
     viewMatrix.lookAt(
-            1, 1, 1, 
-            0, 0, 0, 
+            1, 1, 1,
+            0, 0, 0,
             0, 1, 0);
     viewMatrix.bind();
 

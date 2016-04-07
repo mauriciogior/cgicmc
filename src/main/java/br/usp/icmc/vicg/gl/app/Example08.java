@@ -67,7 +67,7 @@ public class Example08 implements GLEventListener {
         projectionMatrix.bind();
         
         viewMatrix.loadIdentity();
-        viewMatrix.lookAt(4.0f, 1.0f, 2.0f, 
+        viewMatrix.lookAt(4.0f, 1.0f, 2.0f,
                         0.0f, 0.0f, 0.0f, 
                         0.0f, 1.0f, 0.0f);
         viewMatrix.bind();

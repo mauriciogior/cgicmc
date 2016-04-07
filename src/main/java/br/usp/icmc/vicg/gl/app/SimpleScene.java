@@ -4,6 +4,8 @@ package br.usp.icmc.vicg.gl.app;
  * Created by mauricio on 4/5/16.
  */
 
+import br.usp.icmc.vicg.gl.core.Light;
+import br.usp.icmc.vicg.gl.core.Material;
 import br.usp.icmc.vicg.gl.matrix.Matrix4;
 import br.usp.icmc.vicg.gl.model.SimpleModel;
 import br.usp.icmc.vicg.gl.model.SolidSphere;
@@ -31,9 +33,13 @@ public class SimpleScene implements GLEventListener
     private final Shader shader; // Gerenciador dos shaders
     private final SimpleModel sphere;
     private final Square table;
+    private final Light light;
+    private final Material material;
 
     private int color_handle;
 
+    private final Matrix4 projectionMatrix;
+    private final Matrix4 viewMatrix;
     private Matrix4 matrix;
 
 
@@ -45,11 +51,15 @@ public class SimpleScene implements GLEventListener
 
     public SimpleScene()
     {
-        shader = ShaderFactory.getInstance(ShaderFactory.ShaderType.SIMPLE_COLOR_SHADER);
+        shader = ShaderFactory.getInstance(ShaderFactory.ShaderType.COMPLETE_SHADER);
         sphere = new SolidSphere();
         table = new Square();
+        light = new Light();
+        material = new Material();
 
         matrix = new Matrix4();
+        projectionMatrix = new Matrix4();
+        viewMatrix = new Matrix4();
 
         generateBalls();
     }
@@ -65,7 +75,31 @@ public class SimpleScene implements GLEventListener
         shader.bind();
 
         matrix.init(gl, shader.getUniformLocation("u_modelMatrix"));
+        projectionMatrix.init(gl, shader.getUniformLocation("u_projectionMatrix"));
+        viewMatrix.init(gl, shader.getUniformLocation("u_viewMatrix"));
+
         color_handle = shader.getUniformLocation("u_color");
+
+        // Inicializa o sistema de coordenadas
+        projectionMatrix.loadIdentity();
+        projectionMatrix.perspective(45f, 1.0f, 0.1f, 10.0f);
+        projectionMatrix.bind();
+
+        viewMatrix.loadIdentity();
+        viewMatrix.lookAt(0.0f, -2.0f, 2.0f,
+                0.0f, 0.0f, 0.0f,
+                0.0f, 1.0f, 0.0f);
+        viewMatrix.bind();
+
+        light.setPosition(new float[]{10.0f, 10.0f, 5.0f, 1.0f});
+        light.setAmbientColor(new float[]{1.0f, 1.0f, 1.0f, 1.0f});
+        light.setSpecularColor(new float[]{1.0f, 1.0f, 1.0f, 1.0f});
+        light.init(gl, shader);
+        light.bind();
+
+        material.init(gl, shader);
+        material.setAmbientColor(new float[]{0.0f, 0.0f, 0.0f, 1.0f});
+        material.bind();
 
         sphere.init(gl, shader);
         table.init(gl, shader);
@@ -74,7 +108,8 @@ public class SimpleScene implements GLEventListener
     @Override
     public void dispose(GLAutoDrawable glad)
     {
-
+        sphere.dispose();
+        table.dispose();
     }
 
     HSV hsv = new HSV();
@@ -272,6 +307,7 @@ public class SimpleScene implements GLEventListener
 
     @Override
     public void display(GLAutoDrawable glad)  {
+
         hsv.h = 360f / 4f;
         GL3 gl = glad.getGL().getGL3();
 
@@ -281,7 +317,15 @@ public class SimpleScene implements GLEventListener
         matrix.loadIdentity();
         matrix.scale(1f, 2f, 1);
         matrix.bind();
+
         gl.glUniform3f(color_handle, rgb.r, rgb.g, rgb.b);
+
+        light.setDiffuseColor(new float[]{0.0f, 1.0f, 0.0f, 1.0f});
+        light.bind();
+
+        material.setSpecularColor(new float[]{0.4f, 1.0f, 0.4f, 1.0f});
+        material.setDiffuseColor(new float[]{0.0f, 1.0f, 0.0f, 1.0f});
+        material.bind();
 
         table.bind();
         table.draw();
@@ -296,6 +340,13 @@ public class SimpleScene implements GLEventListener
             matrix.scale(Ball.radius, Ball.radius, Ball.radius);
             matrix.bind();
             gl.glUniform3f(color_handle, ball.color.r, ball.color.g, ball.color.b);
+
+            material.setSpecularColor(new float[]{0.4f, 0.4f, 1.0f, 1.0f});
+            material.setDiffuseColor(new float[]{0.0f, 0.0f, 1.0f, 1.0f});
+            light.setDiffuseColor(new float[]{0.0f, 0.0f, 1.0f, 1.0f});
+
+            light.bind();
+            material.bind();
 
             sphere.bind();
             sphere.draw();
