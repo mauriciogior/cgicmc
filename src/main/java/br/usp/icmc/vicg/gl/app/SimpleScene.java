@@ -6,6 +6,7 @@ package br.usp.icmc.vicg.gl.app;
 
 import br.usp.icmc.vicg.gl.core.Light;
 import br.usp.icmc.vicg.gl.core.Material;
+import br.usp.icmc.vicg.gl.jwavefront.JWavefrontObject;
 import br.usp.icmc.vicg.gl.matrix.Matrix4;
 import br.usp.icmc.vicg.gl.model.SimpleModel;
 import br.usp.icmc.vicg.gl.model.SolidSphere;
@@ -21,8 +22,12 @@ import javax.media.opengl.awt.GLCanvas;
 import java.awt.*;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
+import java.io.File;
+import java.io.IOException;
 import java.util.*;
 import java.util.List;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  * Created by Ceccon on 10/03/2016.
@@ -35,6 +40,7 @@ public class SimpleScene implements GLEventListener
     private final Square table;
     private final Light light;
     private final Material material;
+    private final JWavefrontObject tableModel;
 
     private int color_handle;
 
@@ -57,6 +63,8 @@ public class SimpleScene implements GLEventListener
         light = new Light();
         material = new Material();
 
+        tableModel = new JWavefrontObject(new File("./data/table/Pool-Table-Jay-Hardy.obj"));
+
         matrix = new Matrix4();
         projectionMatrix = new Matrix4();
         viewMatrix = new Matrix4();
@@ -78,6 +86,15 @@ public class SimpleScene implements GLEventListener
         projectionMatrix.init(gl, shader.getUniformLocation("u_projectionMatrix"));
         viewMatrix.init(gl, shader.getUniformLocation("u_viewMatrix"));
 
+        try {
+            //init the model
+            tableModel.init(gl, shader);
+            tableModel.unitize();
+            tableModel.dump();
+        } catch (IOException ex) {
+            Logger.getLogger(Example12.class.getName()).log(Level.SEVERE, null, ex);
+        }
+
         color_handle = shader.getUniformLocation("u_color");
 
         // Inicializa o sistema de coordenadas
@@ -86,9 +103,9 @@ public class SimpleScene implements GLEventListener
         projectionMatrix.bind();
 
         viewMatrix.loadIdentity();
-        viewMatrix.lookAt(0.0f, -2.0f, 2.0f,
+        viewMatrix.lookAt(0.0f, 2.0f, 2.0f,
                 0.0f, 0.0f, 0.0f,
-                0.0f, 1.0f, 0.0f);
+                0.0f, -1.0f, 0.0f);
         viewMatrix.bind();
 
         light.setPosition(new float[]{10.0f, 10.0f, 5.0f, 1.0f});
@@ -103,6 +120,37 @@ public class SimpleScene implements GLEventListener
 
         sphere.init(gl, shader);
         table.init(gl, shader);
+
+        setValuesForScene();
+    }
+
+    private void setValuesForTable() {
+        matrix.loadIdentity();
+        matrix.rotate(90f, 1f, 0f, 0f);
+        matrix.rotate(90f, 0f, 1f, 0f);
+        matrix.bind();
+
+        light.setAmbientColor(new float[]{0.7f, 0.7f, 0.7f, 1.0f});
+        light.bind();
+        //light.setDiffuseColor(new float[]{0.75f, 0.75f, 0.75f, 1.0f});
+        //light.setSpecularColor(new float[]{0.7f, 0.7f, 0.7f, 1.0f});
+
+        material.setSpecularColor(new float[]{0.4f, 1.0f, 0.4f, 1.0f});
+        material.setDiffuseColor(new float[]{0.0f, 1.0f, 0.0f, 1.0f});
+        material.bind();
+    }
+
+    private void setValuesForScene() {
+        // Inicializa o sistema de coordenadas
+        projectionMatrix.loadIdentity();
+        projectionMatrix.perspective(45f, 1.0f, 0.1f, 10.0f);
+        projectionMatrix.bind();
+
+        viewMatrix.loadIdentity();
+        viewMatrix.lookAt(0.0f, 2.0f, 2.0f,
+                0.0f, 0.0f, 0.0f,
+                0.0f, -1.0f, 0.0f);
+        viewMatrix.bind();
     }
 
     @Override
@@ -305,13 +353,17 @@ public class SimpleScene implements GLEventListener
 
     private int delay = 0;
 
+    int alpha = 0;
+    int beta = 0;
+    int delta = 5;
+
     @Override
     public void display(GLAutoDrawable glad)  {
 
         hsv.h = 360f / 4f;
         GL3 gl = glad.getGL().getGL3();
 
-        gl.glClear(GL3.GL_COLOR_BUFFER_BIT);
+        gl.glClear(GL3.GL_COLOR_BUFFER_BIT | GL3.GL_DEPTH_BUFFER_BIT);
 
         hsv2rgb(hsv, rgb);
         matrix.loadIdentity();
@@ -329,6 +381,9 @@ public class SimpleScene implements GLEventListener
 
         table.bind();
         table.draw();
+
+        setValuesForTable();
+        tableModel.draw();
 
         if (delay < 10) delay++;
 
