@@ -326,7 +326,7 @@ public class SimpleScene implements GLEventListener
 
         Ball whiteBall = new Ball(Ball.x0 + (Ball.radius * 4), Ball.y0 + Ball.dist, Color.WHITE);
         whiteBall.vy = -0.045f;
-        whiteBall.vx = 0.0025f;
+        whiteBall.vx = -0.0025f;
 
         ballList.add(whiteBall);
 
@@ -397,8 +397,8 @@ public class SimpleScene implements GLEventListener
             gl.glUniform3f(color_handle, ball.color.r, ball.color.g, ball.color.b);
 
             material.setSpecularColor(new float[]{0.4f, 0.4f, 1.0f, 1.0f});
-            material.setDiffuseColor(new float[]{0.0f, 0.0f, 1.0f, 1.0f});
-            light.setDiffuseColor(new float[]{0.0f, 0.0f, 1.0f, 1.0f});
+            material.setDiffuseColor(new float[]{ball.color.r, ball.color.g, ball.color.b, 1.0f});
+            light.setDiffuseColor(new float[]{1.0f, 1.0f, 1.0f, 1.0f});
 
             light.bind();
             material.bind();
