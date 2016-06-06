@@ -1,0 +1,15 @@
+01 -> Red triangle on black background, SIMPLE_SHADER
+02 -> Red triangle and square, resized, translated, MODEL_MATRIX_SHADRE
+03 -> Red wireframe sphere with keyboard commands (didnt work), MODEL_MATRIX_SHADER
+04 -> Red wireframe triangle drawed from lines and coordinates, MODEL_PROJECTION_MATRIX_SHADER
+05 -> Red wireframe triangle drawed from model coordinates, MODEL_PROJECTION_MATRIX_SHADER
+06 -> Red wiredCube, resized, rotated, MODEL_PROJECTION_MATRIX_SHADER
+07 -> Red wiredCube with different view point, orthographic, VIEW_MODEL_PROJECTION_MATRIX_SHADER
+08 -> Red wiredCube with different view point, perspective, VIEW_MODEL_PROJECTION_MATRIX_SHADER
+09 -> Yellow solid sphere, white light, different view point, orthographic, LIGHT_SHADER
+10 -> Red solid cube, white light, COMPLETE_SHADER
+11 -> Opaque green sphere inside translucid blue sphere, white light, LIGHT_SHADER
+12 -> Dummy model rendered and colored, keyboard commands (didnt work), COMPLETE_SHADER
+13 -> Red wireframe triangle with blend (??) LIGHT_SHADER
+14 -> Textured square, white light, TEXTURE_SHADER
+15 -> Textured square with normal map, white light, keyboard commands (didnt work), NORMALMAP_SHADER

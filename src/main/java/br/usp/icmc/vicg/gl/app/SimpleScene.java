@@ -63,7 +63,7 @@ public class SimpleScene implements GLEventListener
         light = new Light();
         material = new Material();
 
-        tableModel = new JWavefrontObject(new File("./data/table/Pool-Table-Jay-Hardy.obj"));
+        tableModel = new JWavefrontObject(new File("./data/table/PoolTable.obj"));
 
         matrix = new Matrix4();
         projectionMatrix = new Matrix4();
