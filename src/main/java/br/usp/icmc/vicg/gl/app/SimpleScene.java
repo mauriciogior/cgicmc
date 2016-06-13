@@ -92,7 +92,7 @@ public class SimpleScene implements GLEventListener
             tableModel.unitize();
             tableModel.dump();
         } catch (IOException ex) {
-            Logger.getLogger(Example12.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(SimpleScene.class.getName()).log(Level.SEVERE, null, ex);
         }
 
         color_handle = shader.getUniformLocation("u_color");

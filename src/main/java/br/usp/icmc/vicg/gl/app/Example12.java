@@ -1,4 +1,4 @@
-package br.usp.icmc.vicg.gl.app;
+/*package br.usp.icmc.vicg.gl.app;
 
 import br.usp.icmc.vicg.gl.core.Light;
 import br.usp.icmc.vicg.gl.jwavefront.JWavefrontObject;
@@ -203,4 +203,4 @@ public class Example12 extends KeyAdapter implements GLEventListener {
     frame.setVisible(true);
     animator.start();
   }
-}
+}*/

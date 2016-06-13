@@ -17,7 +17,7 @@ public class Matrix4 {
   private Stack<float[]> stack;
   private GL3 gl;
   private int handle;
-  private float[] matrix;
+  public float[] matrix;
 
   public Matrix4() {
     matrix = new float[16];
@@ -240,7 +240,7 @@ public class Matrix4 {
     vector[2] /= norm;
   }
 
-  private void multiply(float[] mat2) {
+  public void multiply(float[] mat2) {
     // Cache the matrix values (makes for huge speed increases!)
     float a00 = this.matrix[0], a01 = this.matrix[1], a02 = this.matrix[2], a03 = this.matrix[3];
     float a10 = this.matrix[4], a11 = this.matrix[5], a12 = this.matrix[6], a13 = this.matrix[7];
