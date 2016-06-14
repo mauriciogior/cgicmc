@@ -50,7 +50,7 @@ public class PoolGame extends KeyAdapter implements GLEventListener {
 
         balls[0] = new Ball(Ball.x0, Ball.y0, Ball.z0, 0);
         balls[0].resetPosition();
-        balls[0].setSpeed(-0.035f, -0.065f);
+        balls[0].setSpeed(-0.0055f, -0.065f);
 
         for(int i = 1; i < balls.length; i++) {
             balls[i] = new Ball(Ball.x0, Ball.y0, Ball.z0, i);

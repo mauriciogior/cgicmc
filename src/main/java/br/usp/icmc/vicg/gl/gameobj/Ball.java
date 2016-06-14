@@ -38,7 +38,7 @@ public class Ball extends Actor {
     private static final float radius = 0.03f;
     private static final float tan = radius * (float) Math.sqrt(3);
 
-    public static final float decay = 0.0001f;
+    public static final float decay = 0.00005f;
     public static final float x0 = -1 * (((radius * 5) + (radius * 5/2)) / 2);
     public static final float y0 = 0.4f;
     public static final float z0 = -0.5f;
@@ -76,18 +76,18 @@ public class Ball extends Actor {
         if (ID == 0) {
             setPosition(x + (4 * radius), y, 1.25f + z);
         } else if (ID <= 5) {
-            setPosition(x + ((ID - 1) * 2 * radius), y, z);
+            setPosition(x + ((ID - 1) * 2.1f * radius), y, z);
         } else if (ID <= 9) {
             rID -= 5;
-            setPosition(x + ((((rID - 1) * 2) + 1) * radius), y, z + tan);
+            setPosition(x + ((((rID - 1) * 2.1f) + 1) * radius), y, z + tan * 1.1f);
         } else if (ID <= 12) {
             rID -= 8;
-            setPosition(x + ((rID - 1) * 2 * radius), y, z + (tan * 2));
+            setPosition(x + ((rID - 1) * 2.1f * radius), y, z + (tan * 2.1f));
         } else if (ID <= 14) {
             rID -= 11;
-            setPosition(x + ((((rID - 1) * 2) + 1) * radius), y, z + (tan * 3));
+            setPosition(x + ((((rID - 1) * 2.1f) + 1) * radius), y, z + (tan * 3.1f));
         } else {
-            setPosition(x + (4 * radius), y, z + (tan * 4));
+            setPosition(x + (4.1f * radius), y, z + (tan * 4.1f));
         }
     }
 
@@ -96,8 +96,8 @@ public class Ball extends Actor {
         this.vz = vz;
     }
 
-    public void updatePosition(boolean reverse) {
-        float decay = this.decay;
+    public void updatePosition(boolean reverse, boolean collision) {
+        float decay = collision ? this.decay * 4 : this.decay;
         bx = x;
         bz = z;
 
@@ -118,12 +118,12 @@ public class Ball extends Actor {
 
         if (x + vx + Ball.radius >= 0.5f || x + vx - Ball.radius <= -0.5f) {
             vx *= -1;
-            decay *= 8; // colisão aumenta atrito
+            decay *= 2; // colisão aumenta atrito
         }
 
         if (z + vz + Ball.radius >= 1.045f || z + vz - Ball.radius <= -0.925f) {
             vz *= -1;
-            decay *= 8; // colisão aumenta atrito
+            decay *= 2; // colisão aumenta atrito
         }
 
         x += vx;
@@ -135,8 +135,8 @@ public class Ball extends Actor {
         if (vz > 0) vz -= decay;
         else vz += decay;
 
-        if (Math.abs(vx) < decay * 5) vx = 0;
-        if (Math.abs(vz) < decay * 5) vz = 0;
+        if (Math.abs(vx) < this.decay * 2) vx = 0;
+        if (Math.abs(vz) < this.decay * 2) vz = 0;
     }
 
     public void collision(Ball ball) {
@@ -181,15 +181,16 @@ public class Ball extends Actor {
             ball.x = ball.bx;
             ball.z = ball.bz;
 
-            this.updatePosition(false);
-            ball.updatePosition(false);
+            this.updatePosition(false, true);
+            ball.updatePosition(false, true);
 
             System.out.printf("x = %f, z = %f, or = %d, tar = %d, dvx = %f, vz = %f\n", ball.x, ball.z, ID, ball.ID, ball.vx, ball.vz);
         }
     }
 
     public boolean collided(Ball ball) {
-        //if (ball.vx == 0 && ball.vz == 0 && vx == 0 && vz == 0) return false;
+        if (Math.abs(ball.vx) < decay * 2 && Math.abs(ball.vz) < decay * 2
+                && Math.abs(vx) < decay * 2 && Math.abs(vz) < decay * 2) return false;
         return Math.sqrt(Math.pow((ball.x - x), 2) + Math.pow((ball.z - z), 2)) <= (radius * 2);
     }
 
@@ -255,7 +256,7 @@ public class Ball extends Actor {
 
         if (visible) {
             model.draw();
-            updatePosition(false);
+            updatePosition(false, false);
         }
     }
 
