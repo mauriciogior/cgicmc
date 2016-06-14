@@ -59,6 +59,8 @@ public class Ball extends Actor {
     private float[] ballYAxis;
     private float[] ballZAxis;
 
+    public boolean inRole = false;
+
     public Ball(float x, float y, float z, int ID) {
         super(x, y, z);
         this.ID = ID;
@@ -101,11 +103,18 @@ public class Ball extends Actor {
         bx = x;
         bz = z;
 
+        if (x + vx + Ball.radius >= 0.5f  && z + vz + Ball.radius >= 1.045f)  inRole = true;
+        if (x + vx + Ball.radius >= 0.5f  && z + vz - Ball.radius <= -0.925f) inRole = true;
+        if (x + vx - Ball.radius <= -0.5f && z + vz - Ball.radius <= -0.925f) inRole = true;
+        if (x + vx - Ball.radius <= -0.5f && z + vz + Ball.radius >= 1.045f)  inRole = true;
+        if (x + vx - Ball.radius <= -0.5f && z + vz + Ball.radius >= 0.4625f) inRole = true;
+        if (x + vx - Ball.radius >= 0.5f && z + vz + Ball.radius >= 0.4625f)  inRole = true;
+
         if (reverse) {
             x -= vx;
             z -= vz;
 
-            if (x + vx + Ball.radius > 0.6f || x + vx - Ball.radius < -0.6f) {
+            if (x + vx + Ball.radius > 0.5f || x + vx - Ball.radius < -0.5f) {
                 vx *= -1;
             }
 
@@ -254,7 +263,7 @@ public class Ball extends Actor {
         modelMatrix.multiply(rotationMatrix.matrix);
         modelMatrix.bind();
 
-        if (visible) {
+        if (visible && !inRole) {
             model.draw();
             updatePosition(false, false);
         }
@@ -268,7 +277,7 @@ public class Ball extends Actor {
 
     @Override
     public void erase() {
-        if(visible) {
+        if (visible) {
             model.dispose();
         }
         visible = false;

@@ -114,12 +114,19 @@ public class PoolGame extends KeyAdapter implements GLEventListener {
         poolTable.draw();
         tableSurface.draw();
         balls[0].draw();
+
         for(int i = 1; i < balls.length; i++) {
+            if (balls[i].inRole) continue;
+
             balls[i].draw();
         }
 
         for (int i = 0; i < balls.length - 1; i++) {
+            if (balls[i].inRole) continue;
+
             for (int j = 0; j < balls.length; j++) {
+                if (balls[j].inRole) continue;
+
                 if (j != i) balls[i].collision(balls[j]);
             }
         }
