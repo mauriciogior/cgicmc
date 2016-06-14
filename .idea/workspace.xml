@@ -2,7 +2,117 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a493bfef-6557-4d84-a0cd-032f3fa6dfb8" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/usp/icmc/vicg/gl/gameobj/Cue.java" afterPath="$PROJECT_DIR$/src/main/java/br/usp/icmc/vicg/gl/gameobj/Cue.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/Apple_large22.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TournamentTable.lwo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TournamentTable.obj" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/VW-new-beetle.mtl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/VW-new-beetle.obj" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/al.mtl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/al.obj" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/apples.mtl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/apples.obj" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/balls/ball00.mtl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/balls/ball01.mtl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/balls/ball02.mtl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/balls/ball03.mtl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/balls/ball04.mtl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/balls/ball05.mtl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/balls/ball06.mtl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/balls/ball07.mtl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/balls/ball08.mtl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/balls/ball09.mtl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/balls/ball10.mtl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/balls/ball11.mtl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/balls/ball12.mtl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/balls/ball13.mtl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/balls/ball14.mtl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/balls/ball15.mtl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/concept-sedan-01v2.mtl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/concept-sedan-01v2.obj" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/f-16.mtl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/f-16.obj" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/knight/armor_diffuse.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/knight/arms_diffuse.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/knight/boots_diffuse.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/knight/boots_nm.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/knight/boots_specular.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/knight/head_diffuse.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/knight/helmet_diffuse.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/knight/knight.mtl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/knight/knight.obj" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/knight/license.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/knight/pants_diffuse.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/knight/pants_nm.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/knight/pants_specular.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/murci/Wheel/0000-a.BMP" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/murci/Wheel/0000.BMP" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/murci/Wheel/0001-a.BMP" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/murci/Wheel/0001.BMP" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/murci/Wheel/0002-a.BMP" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/murci/Wheel/0002.BMP" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/murci/Wheel/index.fsh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/murci/murcilego.mtl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/murci/murcilego.obj" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/murci/skin00/0000-a.BMP" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/murci/skin00/0000.BMP" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/murci/skin00/index.fsh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/murci/skin01/0000-a.BMP" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/murci/skin01/0000.BMP" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/murci/skin01/index.fsh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/murci/skin02/0000-a.BMP" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/murci/skin02/0000.BMP" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/murci/skin02/index.fsh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/murci/skin03/0000-a.BMP" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/murci/skin03/0000.BMP" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/murci/skin03/index.fsh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/murci/skin04/0000-a.BMP" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/murci/skin04/0000.BMP" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/murci/skin04/index.fsh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/murci/skin05/0000-a.BMP" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/murci/skin05/0000.BMP" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/murci/skin05/index.fsh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/murci/skincop/0000-a.BMP" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/murci/skincop/0000.BMP" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/murci/skincop/index.fsh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/murci/skinhp/0000-a.BMP" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/murci/skinhp/0000.BMP" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/murci/skinhp/index.fsh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/robot/maps/robot-bashka.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/robot/maps/robot-tushka.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/robot/robot.mtl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/robot/robot.obj" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/scooter.mtl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/scooter.obj" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/xwing/maps/BACKGZMO.JPG" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/xwing/maps/ENGINBTM.JPG" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/xwing/maps/ENGINTOP.JPG" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/xwing/maps/HULLBTM.JPG" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/xwing/maps/INTAKETX.JPG" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/xwing/maps/LASER.JPG" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/xwing/maps/PANELTOP.JPG" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/xwing/maps/REFMAP.GIF" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/xwing/maps/TOPGIZMO.JPG" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/xwing/maps/xtradirt.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/xwing/xwing.mtl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/xwing/xwing.obj" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/balls/ball00.obj" afterPath="$PROJECT_DIR$/data/balls/ball00.obj" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/balls/ball01.obj" afterPath="$PROJECT_DIR$/data/balls/ball01.obj" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/balls/ball02.obj" afterPath="$PROJECT_DIR$/data/balls/ball02.obj" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/balls/ball03.obj" afterPath="$PROJECT_DIR$/data/balls/ball03.obj" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/balls/ball04.obj" afterPath="$PROJECT_DIR$/data/balls/ball04.obj" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/balls/ball05.obj" afterPath="$PROJECT_DIR$/data/balls/ball05.obj" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/balls/ball06.obj" afterPath="$PROJECT_DIR$/data/balls/ball06.obj" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/balls/ball07.obj" afterPath="$PROJECT_DIR$/data/balls/ball07.obj" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/balls/ball08.obj" afterPath="$PROJECT_DIR$/data/balls/ball08.obj" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/balls/ball09.obj" afterPath="$PROJECT_DIR$/data/balls/ball09.obj" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/balls/ball10.obj" afterPath="$PROJECT_DIR$/data/balls/ball10.obj" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/balls/ball11.obj" afterPath="$PROJECT_DIR$/data/balls/ball11.obj" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/balls/ball12.obj" afterPath="$PROJECT_DIR$/data/balls/ball12.obj" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/balls/ball13.obj" afterPath="$PROJECT_DIR$/data/balls/ball13.obj" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/balls/ball14.obj" afterPath="$PROJECT_DIR$/data/balls/ball14.obj" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/balls/ball15.obj" afterPath="$PROJECT_DIR$/data/balls/ball15.obj" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/table/PoolTable.mtl" afterPath="$PROJECT_DIR$/data/table/PoolTable.mtl" />
     </list>
     <ignored path="cg2014.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -25,11 +135,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="PoolGame.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="PoolGame.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/br/usp/icmc/vicg/gl/app/PoolGame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="201">
-              <caret line="49" column="50" selection-start-line="49" selection-start-column="50" selection-end-line="49" selection-end-column="50" />
+            <state relative-caret-position="190">
+              <caret line="114" column="19" selection-start-line="114" selection-start-column="19" selection-end-line="114" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -45,7 +155,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Cue.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Cue.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/br/usp/icmc/vicg/gl/gameobj/Cue.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="340">
@@ -115,10 +225,10 @@
         <option value="$PROJECT_DIR$/src/main/java/br/usp/icmc/vicg/gl/gameobj/PoolTable.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/usp/icmc/vicg/gl/gameobj/TableSurface.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/usp/icmc/vicg/gl/matrix/Matrix4.java" />
-        <option value="$PROJECT_DIR$/src/main/java/br/usp/icmc/vicg/gl/app/PoolGame.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/usp/icmc/vicg/gl/gameobj/Camera.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/usp/icmc/vicg/gl/gameobj/Ball.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/usp/icmc/vicg/gl/gameobj/Cue.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/usp/icmc/vicg/gl/app/PoolGame.java" />
       </list>
     </option>
   </component>
@@ -942,12 +1052,12 @@
       <workItem from="1465647832678" duration="5041000" />
       <workItem from="1465741997754" duration="31731000" />
       <workItem from="1465838744863" duration="9821000" />
-      <workItem from="1465863991626" duration="7283000" />
+      <workItem from="1465863991626" duration="10183000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="113240000" />
+    <option name="totallyTimeSpent" value="116140000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
@@ -1364,14 +1474,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/usp/icmc/vicg/gl/app/PoolGame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="49" column="50" selection-start-line="49" selection-start-column="50" selection-end-line="49" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/br/usp/icmc/vicg/gl/gameobj/Cue.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
@@ -1379,6 +1481,14 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/usp/icmc/vicg/gl/app/PoolGame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="114" column="19" selection-start-line="114" selection-start-column="19" selection-end-line="114" selection-end-column="19" />
+          <folding />
         </state>
       </provider>
     </entry>
