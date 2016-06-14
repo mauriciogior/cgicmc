@@ -184,7 +184,7 @@ public class Ball extends Actor {
             this.updatePosition(false);
             ball.updatePosition(false);
 
-            System.out.printf("x = %f, z = %f, or = %d, tar = %d, dvx = %f, vz = %f\n", ball.x, ball.z, ID, ball.ID, ball.vx, ball.vz);
+            //System.out.printf("x = %f, z = %f, or = %d, tar = %d, dvx = %f, vz = %f\n", ball.x, ball.z, ID, ball.ID, ball.vx, ball.vz);
         }
     }
 

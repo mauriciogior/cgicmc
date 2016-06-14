@@ -17,18 +17,36 @@ public class Camera extends Actor {
     private Ball whiteBall;
     private float rotationAngle;
 
+    private float defaultX;
+    private float defaultY;
+    private float defaultZ;
+
     public enum Target {
         ORIGIN,
         WHITEBALL
     }
+    private Target target;
 
-    public Camera(float x, float y, float z) {
+    public void setTarget(Target target) {
+        this.target = target;
+    }
+
+    public Target getTarget() {
+        return target;
+    }
+
+    public Camera(float x, float y, float z, Ball whiteBall) {
         super(x, y, z);
+        defaultX = x;
+        defaultY = y;
+        defaultZ = z;
         angle = 60;
         aspect = 1;
-        dnear = 1;
+        dnear = 0.1f;
         dfar = 10;
         rotationAngle = 0;
+        this.whiteBall = whiteBall;
+        target = Target.ORIGIN;
     }
 
     public void rotate(float angle) {
@@ -42,10 +60,22 @@ public class Camera extends Actor {
         projectionMatrix.bind();
 
         viewMatrix.loadIdentity();
-        viewMatrix.lookAt(
-                (float) (x * Math.sin(rotationAngle)), y, (float) (z * Math.cos(rotationAngle)),
-                0, 0, 0,
-                0, 1, 0);
+        if(target == Target.ORIGIN) {
+            x = (float) (defaultX * Math.sin(rotationAngle));
+            z = (float) (defaultZ * Math.cos(rotationAngle));
+            viewMatrix.lookAt(
+                    x, defaultY, z,
+                    0, 0, 0,
+                    0, 1, 0);
+        }
+        else if(target == Target.WHITEBALL) {
+            x = (float) (whiteBall.getX() + (defaultX / 2 * Math.sin(rotationAngle)));
+            z = (float) (whiteBall.getZ() + (defaultZ / 2 * Math.cos(rotationAngle)));
+            viewMatrix.lookAt(
+                    x, defaultY, z,
+                    whiteBall.getX(), 0.4f, whiteBall.getZ(),
+                    0, 1, 0);
+        }
         viewMatrix.bind();
     }
 

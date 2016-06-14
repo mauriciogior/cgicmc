@@ -2,10 +2,7 @@ package br.usp.icmc.vicg.gl.app;
 
 import br.usp.icmc.vicg.gl.core.Light;
 import br.usp.icmc.vicg.gl.core.Material;
-import br.usp.icmc.vicg.gl.gameobj.Ball;
-import br.usp.icmc.vicg.gl.gameobj.Camera;
-import br.usp.icmc.vicg.gl.gameobj.PoolTable;
-import br.usp.icmc.vicg.gl.gameobj.TableSurface;
+import br.usp.icmc.vicg.gl.gameobj.*;
 import br.usp.icmc.vicg.gl.jwavefront.JWavefrontObject;
 import br.usp.icmc.vicg.gl.matrix.Matrix4;
 import br.usp.icmc.vicg.gl.model.Cube;
@@ -33,6 +30,7 @@ public class PoolGame extends KeyAdapter implements GLEventListener {
 
     private final Shader shader; // Gerenciador dos shaders
     private final PoolTable poolTable;
+    private final Cue cue;
     private final Ball[] balls;
     private final TableSurface tableSurface;
     private final Camera camera;
@@ -43,12 +41,13 @@ public class PoolGame extends KeyAdapter implements GLEventListener {
         shader = ShaderFactory.getInstance(ShaderType.COMPLETE_SHADER);
 
         // declara os objetos e suas posições
-        camera = new Camera(2, 1.5f, 2);
         poolTable = new PoolTable(0, 0, 0);
         tableSurface = new TableSurface(0, 0, 0);
         balls = new Ball[16];
 
         balls[0] = new Ball(Ball.x0, Ball.y0, Ball.z0, 0);
+        camera = new Camera(2, 1.5f, 2, balls[0]);
+        cue = new Cue(0, 0.5f, 0, balls[0], camera);
         balls[0].resetPosition();
         balls[0].setSpeed(-0.035f, -0.065f);
 
@@ -83,6 +82,7 @@ public class PoolGame extends KeyAdapter implements GLEventListener {
         //inicializa os objetos da cena
         camera.init(gl, shader);
         poolTable.init(gl, shader);
+        cue.init(gl, shader);
         tableSurface.init(gl, shader);
 
         for(int i = 0; i < balls.length; i++) {
@@ -112,6 +112,7 @@ public class PoolGame extends KeyAdapter implements GLEventListener {
         camera.draw();
 
         poolTable.draw();
+        cue.draw();
         tableSurface.draw();
         balls[0].draw();
         for(int i = 1; i < balls.length; i++) {
@@ -135,6 +136,7 @@ public class PoolGame extends KeyAdapter implements GLEventListener {
     @Override
     public void dispose(GLAutoDrawable drawable) {
         poolTable.erase();
+        cue.erase();
         tableSurface.erase();
     }
 
@@ -151,6 +153,13 @@ public class PoolGame extends KeyAdapter implements GLEventListener {
             case KeyEvent.VK_RIGHT://gira sobre o eixo-y
                 camera.rotate((float) (Math.PI) * 0.04f);
                 break;
+            case KeyEvent.VK_SPACE:
+                if(camera.getTarget() == Camera.Target.ORIGIN) {
+                    camera.setTarget(Camera.Target.WHITEBALL);
+                }
+                else {
+                    camera.setTarget(Camera.Target.ORIGIN);
+                }
         }
     }
 
