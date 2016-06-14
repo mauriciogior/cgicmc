@@ -40,8 +40,8 @@ public class Camera extends Actor {
         defaultX = x;
         defaultY = y;
         defaultZ = z;
-        angle = 60;
-        aspect = 1;
+        angle = 45;
+        aspect = 1.8f;
         dnear = 0.1f;
         dfar = 10;
         rotationAngle = 0;
@@ -64,7 +64,7 @@ public class Camera extends Actor {
             x = (float) (defaultX * Math.sin(rotationAngle));
             z = (float) (defaultZ * Math.cos(rotationAngle));
             viewMatrix.lookAt(
-                    x, defaultY + 1, z,
+                    x, defaultY + 0.5f, z,
                     0, 0, 0,
                     0, 1, 0);
         }

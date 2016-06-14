@@ -167,10 +167,10 @@ public class PoolGame extends KeyAdapter implements GLEventListener {
             case KeyEvent.VK_PAGE_DOWN:
                 break;
             case KeyEvent.VK_LEFT://gira sobre o eixo-y
-                camera.rotate((float) (Math.PI) * -0.02f);
+                camera.rotate((float) (Math.PI) * -0.01f);
                 break;
             case KeyEvent.VK_RIGHT://gira sobre o eixo-y
-                camera.rotate((float) (Math.PI) * 0.02f);
+                camera.rotate((float) (Math.PI) * 0.01f);
                 break;
             case KeyEvent.VK_SPACE:
                 if(camera.getTarget() == Camera.Target.ORIGIN) {
@@ -183,14 +183,8 @@ public class PoolGame extends KeyAdapter implements GLEventListener {
 
             case KeyEvent.VK_B:
                 if (camera.getTarget() == Camera.Target.ORIGIN) return;
-
-                float[] normal = cue.cameraBallVector;
-                float speedX = normal[0];
-                float speedZ = normal[2];
-                balls[0].setSpeed(speedX * 0.03f, speedZ * 0.03f);
-                System.out.println("CUE");
-                System.out.println(speedX + " - " + speedZ);
-                camera.setTarget(Camera.Target.ORIGIN);
+                cue.shoot();
+                break;
         }
     }
 
@@ -211,7 +205,7 @@ public class PoolGame extends KeyAdapter implements GLEventListener {
         glCanvas.addGLEventListener(listener);
 
         Frame frame = new Frame("Pool Game");
-        frame.setSize(900, 900);
+        frame.setSize(1366, 728);
         frame.add(glCanvas);
         frame.addKeyListener(listener);
         final AnimatorBase animator = new FPSAnimator(glCanvas, 60);

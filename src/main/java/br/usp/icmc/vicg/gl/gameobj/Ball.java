@@ -242,12 +242,16 @@ public class Ball extends Actor {
         });
     }
 
+    public float getSpeed() {
+        return (float) Math.sqrt(vx * vx + vz * vz);
+    }
+
     @Override
     public void update() {
         velocity[0] = vx;
         velocity[1] = 0;
         velocity[2] = vz;
-        speed = (float) Math.sqrt(vx * vx + vz * vz);
+        speed = getSpeed();
         if(speed > 0) {
             theta = (speed / radius) * 57.2958f;
             direction = getNormal(velocity);

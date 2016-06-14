@@ -17,6 +17,11 @@ public class Cue extends Actor {
     Ball whiteBall;
     Camera camera;
     public float[] cameraBallVector;
+
+    private boolean animating;
+    private float[] startPoint;
+    private int frame;
+
     public Cue(float x, float y, float z, Ball whiteBall, Camera camera) {
         super(x, y, z);
         this.whiteBall = whiteBall;
@@ -25,6 +30,16 @@ public class Cue extends Actor {
         sizeX = 0.8f;
         sizeY = 0.8f;
         sizeZ = 0.8f;
+    }
+
+    public void shoot() {
+        if(whiteBall.getSpeed() == 0 && !animating) {
+            frame = 0;
+            animating = true;
+            startPoint = new float[]{camera.getX(), 0, camera.getZ()};
+            x = startPoint[0];
+            z = startPoint[2];
+        }
     }
 
     private float[] getNormal(float[] vector) {
@@ -39,7 +54,10 @@ public class Cue extends Actor {
 
     @Override
     public void update() {
-        cameraBallVector = getNormal(new float[]{whiteBall.getX() - camera.getX(), 0, whiteBall.getZ() - camera.getZ()});
+        if(!animating) {
+            cameraBallVector = getNormal(new float[]{whiteBall.getX() - camera.getX(), 0, whiteBall.getZ() - camera.getZ()});
+        }
+
         if(camera.getX() < whiteBall.getX()) {
             rotationZ = (float) Math.acos(dotProduct(new float[]{0, 0, 1}, cameraBallVector)) * 57.2958f + 180;
         }
@@ -48,7 +66,33 @@ public class Cue extends Actor {
         }
 
         modelMatrix.loadIdentity();
-        modelMatrix.translate(camera.getX(), 0.5f, camera.getZ());
+        if(!animating) {
+            x = camera.getX();
+            z = camera.getZ();
+            modelMatrix.translate(x, 0.5f, z);
+        }
+        if(animating) {
+            if(frame < 60) {
+                x -= cameraBallVector[0] * (1f / 60f);
+                z -= cameraBallVector[2] * (1f / 60f);
+                modelMatrix.translate(x, 0.5f, z);
+            }
+            else if(frame < 90){
+                x += cameraBallVector[0] * (1f / 30f);
+                z += cameraBallVector[2] * (1f / 30f);
+                modelMatrix.translate(x, 0.5f, z);
+            }
+            else if (frame == 90){
+                float speedX = cameraBallVector[0];
+                float speedZ = cameraBallVector[2];
+                whiteBall.setSpeed(speedX * 0.03f, speedZ * 0.03f);
+            }
+            else if (frame == 120){
+                camera.setTarget(Camera.Target.ORIGIN);
+                animating = false;
+            }
+            frame++;
+        }
         modelMatrix.rotate(rotationX, 1, 0, 0);
         modelMatrix.rotate(rotationY, 0, 1, 0);
         modelMatrix.rotate(rotationZ, 0, 0, 1);
@@ -79,6 +123,7 @@ public class Cue extends Actor {
         modelMatrix = new Matrix4();
         modelMatrix.init(gl, shader.getUniformLocation("u_modelMatrix"));
         visible = false;
+        animating = false;
         cameraBallVector = new float[3];
         try {
             model.init(gl, shader);
