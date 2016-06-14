@@ -2,117 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a493bfef-6557-4d84-a0cd-032f3fa6dfb8" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/Apple_large22.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TournamentTable.lwo" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/TournamentTable.obj" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/VW-new-beetle.mtl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/VW-new-beetle.obj" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/al.mtl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/al.obj" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/apples.mtl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/apples.obj" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/balls/ball00.mtl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/balls/ball01.mtl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/balls/ball02.mtl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/balls/ball03.mtl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/balls/ball04.mtl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/balls/ball05.mtl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/balls/ball06.mtl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/balls/ball07.mtl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/balls/ball08.mtl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/balls/ball09.mtl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/balls/ball10.mtl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/balls/ball11.mtl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/balls/ball12.mtl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/balls/ball13.mtl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/balls/ball14.mtl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/balls/ball15.mtl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/concept-sedan-01v2.mtl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/concept-sedan-01v2.obj" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/f-16.mtl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/f-16.obj" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/knight/armor_diffuse.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/knight/arms_diffuse.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/knight/boots_diffuse.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/knight/boots_nm.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/knight/boots_specular.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/knight/head_diffuse.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/knight/helmet_diffuse.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/knight/knight.mtl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/knight/knight.obj" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/knight/license.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/knight/pants_diffuse.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/knight/pants_nm.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/knight/pants_specular.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/murci/Wheel/0000-a.BMP" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/murci/Wheel/0000.BMP" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/murci/Wheel/0001-a.BMP" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/murci/Wheel/0001.BMP" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/murci/Wheel/0002-a.BMP" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/murci/Wheel/0002.BMP" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/murci/Wheel/index.fsh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/murci/murcilego.mtl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/murci/murcilego.obj" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/murci/skin00/0000-a.BMP" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/murci/skin00/0000.BMP" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/murci/skin00/index.fsh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/murci/skin01/0000-a.BMP" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/murci/skin01/0000.BMP" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/murci/skin01/index.fsh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/murci/skin02/0000-a.BMP" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/murci/skin02/0000.BMP" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/murci/skin02/index.fsh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/murci/skin03/0000-a.BMP" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/murci/skin03/0000.BMP" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/murci/skin03/index.fsh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/murci/skin04/0000-a.BMP" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/murci/skin04/0000.BMP" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/murci/skin04/index.fsh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/murci/skin05/0000-a.BMP" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/murci/skin05/0000.BMP" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/murci/skin05/index.fsh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/murci/skincop/0000-a.BMP" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/murci/skincop/0000.BMP" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/murci/skincop/index.fsh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/murci/skinhp/0000-a.BMP" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/murci/skinhp/0000.BMP" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/murci/skinhp/index.fsh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/robot/maps/robot-bashka.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/robot/maps/robot-tushka.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/robot/robot.mtl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/robot/robot.obj" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/scooter.mtl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/scooter.obj" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/xwing/maps/BACKGZMO.JPG" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/xwing/maps/ENGINBTM.JPG" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/xwing/maps/ENGINTOP.JPG" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/xwing/maps/HULLBTM.JPG" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/xwing/maps/INTAKETX.JPG" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/xwing/maps/LASER.JPG" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/xwing/maps/PANELTOP.JPG" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/xwing/maps/REFMAP.GIF" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/xwing/maps/TOPGIZMO.JPG" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/xwing/maps/xtradirt.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/xwing/xwing.mtl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/xwing/xwing.obj" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/balls/ball00.obj" afterPath="$PROJECT_DIR$/data/balls/ball00.obj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/balls/ball01.obj" afterPath="$PROJECT_DIR$/data/balls/ball01.obj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/balls/ball02.obj" afterPath="$PROJECT_DIR$/data/balls/ball02.obj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/balls/ball03.obj" afterPath="$PROJECT_DIR$/data/balls/ball03.obj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/balls/ball04.obj" afterPath="$PROJECT_DIR$/data/balls/ball04.obj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/balls/ball05.obj" afterPath="$PROJECT_DIR$/data/balls/ball05.obj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/balls/ball06.obj" afterPath="$PROJECT_DIR$/data/balls/ball06.obj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/balls/ball07.obj" afterPath="$PROJECT_DIR$/data/balls/ball07.obj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/balls/ball08.obj" afterPath="$PROJECT_DIR$/data/balls/ball08.obj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/balls/ball09.obj" afterPath="$PROJECT_DIR$/data/balls/ball09.obj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/balls/ball10.obj" afterPath="$PROJECT_DIR$/data/balls/ball10.obj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/balls/ball11.obj" afterPath="$PROJECT_DIR$/data/balls/ball11.obj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/balls/ball12.obj" afterPath="$PROJECT_DIR$/data/balls/ball12.obj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/balls/ball13.obj" afterPath="$PROJECT_DIR$/data/balls/ball13.obj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/balls/ball14.obj" afterPath="$PROJECT_DIR$/data/balls/ball14.obj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/balls/ball15.obj" afterPath="$PROJECT_DIR$/data/balls/ball15.obj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/table/PoolTable.mtl" afterPath="$PROJECT_DIR$/data/table/PoolTable.mtl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/usp/icmc/vicg/gl/app/PoolGame.java" afterPath="$PROJECT_DIR$/src/main/java/br/usp/icmc/vicg/gl/app/PoolGame.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/usp/icmc/vicg/gl/gameobj/Ball.java" afterPath="$PROJECT_DIR$/src/main/java/br/usp/icmc/vicg/gl/gameobj/Ball.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/usp/icmc/vicg/gl/gameobj/Cue.java" afterPath="$PROJECT_DIR$/src/main/java/br/usp/icmc/vicg/gl/gameobj/Cue.java" />
     </list>
     <ignored path="cg2014.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -135,21 +28,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="PoolGame.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="PoolGame.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/br/usp/icmc/vicg/gl/app/PoolGame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="114" column="19" selection-start-line="114" selection-start-column="19" selection-end-line="114" selection-end-column="19" />
+            <state relative-caret-position="374">
+              <caret line="201" column="55" selection-start-line="201" selection-start-column="55" selection-end-line="201" selection-end-column="55" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Ball.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Ball.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/br/usp/icmc/vicg/gl/gameobj/Ball.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="377">
-              <caret line="196" column="9" selection-start-line="196" selection-start-column="9" selection-end-line="196" selection-end-column="9" />
+            <state relative-caret-position="255">
+              <caret line="112" column="76" selection-start-line="112" selection-start-column="76" selection-end-line="112" selection-end-column="76" />
               <folding />
             </state>
           </provider>
@@ -158,8 +51,8 @@
       <file leaf-file-name="Cue.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/br/usp/icmc/vicg/gl/gameobj/Cue.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="56" column="67" selection-start-line="56" selection-start-column="67" selection-end-line="56" selection-end-column="67" />
+            <state relative-caret-position="270">
+              <caret line="18" column="10" selection-start-line="18" selection-start-column="10" selection-end-line="18" selection-end-column="10" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -170,7 +63,7 @@
       <file leaf-file-name="PoolTable.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/br/usp/icmc/vicg/gl/gameobj/PoolTable.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="59">
+            <state relative-caret-position="378">
               <caret line="43" column="25" selection-start-line="43" selection-start-column="25" selection-end-line="43" selection-end-column="25" />
               <folding />
             </state>
@@ -180,7 +73,7 @@
       <file leaf-file-name="Camera.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/br/usp/icmc/vicg/gl/gameobj/Camera.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-144">
+            <state relative-caret-position="600">
               <caret line="44" column="18" selection-start-line="44" selection-start-column="18" selection-end-line="44" selection-end-column="18" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -226,23 +119,29 @@
         <option value="$PROJECT_DIR$/src/main/java/br/usp/icmc/vicg/gl/gameobj/TableSurface.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/usp/icmc/vicg/gl/matrix/Matrix4.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/usp/icmc/vicg/gl/gameobj/Camera.java" />
-        <option value="$PROJECT_DIR$/src/main/java/br/usp/icmc/vicg/gl/gameobj/Ball.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/usp/icmc/vicg/gl/gameobj/Cue.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/usp/icmc/vicg/gl/app/PoolGame.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/usp/icmc/vicg/gl/gameobj/Ball.java" />
       </list>
     </option>
   </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolGruntFileManager" detection-done="true" />
+  <component name="JsBuildToolPackageJson" detection-done="true" />
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
-    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Bundled (Maven 3)" />
+      </MavenGeneralSettings>
+    </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1456" />
-    <option name="height" value="876" />
+    <option name="x" value="4" />
+    <option name="y" value="23" />
+    <option name="width" value="1276" />
+    <option name="height" value="777" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -269,6 +168,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="PackagesPane">
         <subPane />
       </pane>
@@ -289,7 +189,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="cgicmc" />
+              <option name="myItemId" value="cg-2014" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -299,7 +199,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="cgicmc" />
+              <option name="myItemId" value="cg-2014" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -317,37 +217,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="cgicmc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gl" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="util" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cg2014" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cgicmc" />
+              <option name="myItemId" value="cg-2014" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -373,97 +243,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="cgicmc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gl" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="model" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cg2014" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cgicmc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gl" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="matrix" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cg2014" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cgicmc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gl" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jwavefront" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cg2014" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cgicmc" />
+              <option name="myItemId" value="cg-2014" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -487,69 +267,8 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cg2014" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cgicmc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gl" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="core" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cg2014" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cgicmc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gl" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1053,28 +772,30 @@
       <workItem from="1465741997754" duration="31731000" />
       <workItem from="1465838744863" duration="9821000" />
       <workItem from="1465863991626" duration="10183000" />
+      <workItem from="1465877617716" duration="2511000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="116140000" />
+    <option name="totallyTimeSpent" value="118651000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
+    <frame x="4" y="23" width="1276" height="777" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32898173" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32768363" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22845954" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25706214" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32898173" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19652778" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19592476" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1084,7 +805,6 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32898173" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1118,57 +838,15 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/data/scooter.obj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1350">
-          <caret line="17" column="22" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/al.mtl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="60" column="14" selection-start-line="60" selection-start-column="14" selection-end-line="60" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/data/scooter.obj" />
+    <entry file="file://$PROJECT_DIR$/data/al.mtl" />
     <entry file="file://$PROJECT_DIR$/../PoolTable/Objects/TournamentTable.obj" />
-    <entry file="file://$PROJECT_DIR$/data/TournamentTable.obj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="1" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/TournamentTable.lwo">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/concept-sedan-01v2.obj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="5" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/data/TournamentTable.obj" />
+    <entry file="file://$PROJECT_DIR$/data/TournamentTable.lwo" />
+    <entry file="file://$PROJECT_DIR$/data/concept-sedan-01v2.obj" />
     <entry file="file://$PROJECT_DIR$/data/table/Pool-Table-Jay-Hardy.obj" />
-    <entry file="file://$PROJECT_DIR$/data/al.obj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-16470">
-          <caret line="35" column="14" selection-start-line="35" selection-start-column="14" selection-end-line="35" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/concept-sedan-01v2.mtl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/data/al.obj" />
+    <entry file="file://$PROJECT_DIR$/data/concept-sedan-01v2.mtl" />
     <entry file="file://$PROJECT_DIR$/data/table/Pool-Table-Jay-Hardy.mtl" />
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
@@ -1341,15 +1019,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1633">
           <caret line="205" column="3" selection-start-line="205" selection-start-column="3" selection-end-line="205" selection-end-column="3" />
-          <folding>
-            <element signature="e#0#5652#0" expanded="false" />
-            <marker date="1465588168726" expanded="false" signature="3932:3939" placeholder=" { " />
-            <marker date="1465588168726" expanded="false" signature="3955:3959" placeholder=" }" />
-            <marker date="1465588168726" expanded="false" signature="5316:5402" placeholder="(WindowAdapter) windowClosing(e) → {" />
-            <marker date="1465588168726" expanded="false" signature="5422:5488" placeholder="(Runnable) () → {" />
-            <marker date="1465588168726" expanded="false" signature="5554:5567" placeholder="}" />
-            <marker date="1465588168726" expanded="false" signature="5582:5591" placeholder="}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1437,28 +1106,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/usp/icmc/vicg/gl/gameobj/Actor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="36" column="5" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
-          <folding>
-            <element signature="e#549#550#0" expanded="true" />
-            <element signature="e#577#578#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/usp/icmc/vicg/gl/gameobj/PoolTable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="59">
-          <caret line="43" column="25" selection-start-line="43" selection-start-column="25" selection-end-line="43" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/br/usp/icmc/vicg/gl/gameobj/Camera.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-144">
+        <state relative-caret-position="600">
           <caret line="44" column="18" selection-start-line="44" selection-start-column="18" selection-end-line="44" selection-end-column="18" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1466,28 +1116,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/usp/icmc/vicg/gl/gameobj/Ball.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/usp/icmc/vicg/gl/gameobj/Actor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
-          <caret line="196" column="9" selection-start-line="196" selection-start-column="9" selection-end-line="196" selection-end-column="9" />
+        <state relative-caret-position="75">
+          <caret line="18" column="21" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/usp/icmc/vicg/gl/app/PoolGame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="201" column="55" selection-start-line="201" selection-start-column="55" selection-end-line="201" selection-end-column="55" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/br/usp/icmc/vicg/gl/gameobj/Cue.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="56" column="67" selection-start-line="56" selection-start-column="67" selection-end-line="56" selection-end-column="67" />
+        <state relative-caret-position="270">
+          <caret line="18" column="10" selection-start-line="18" selection-start-column="10" selection-end-line="18" selection-end-column="10" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/usp/icmc/vicg/gl/app/PoolGame.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/usp/icmc/vicg/gl/gameobj/PoolTable.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="114" column="19" selection-start-line="114" selection-start-column="19" selection-end-line="114" selection-end-column="19" />
+        <state relative-caret-position="378">
+          <caret line="43" column="25" selection-start-line="43" selection-start-column="25" selection-end-line="43" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/usp/icmc/vicg/gl/gameobj/Ball.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="112" column="76" selection-start-line="112" selection-start-column="76" selection-end-line="112" selection-end-column="76" />
           <folding />
         </state>
       </provider>

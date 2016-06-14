@@ -113,7 +113,7 @@ public class PoolGame extends KeyAdapter implements GLEventListener {
 
         poolTable.draw();
         cue.draw();
-        tableSurface.draw();
+        //tableSurface.draw();
         balls[0].draw();
 
         for(int i = 1; i < balls.length; i++) {
@@ -146,7 +146,7 @@ public class PoolGame extends KeyAdapter implements GLEventListener {
         cue.erase();
         tableSurface.erase();
     }
-
+    float counter = 0.005f;
     @Override
     public void keyPressed(KeyEvent e) {
         switch (e.getKeyCode()) {
@@ -167,6 +167,39 @@ public class PoolGame extends KeyAdapter implements GLEventListener {
                 else {
                     camera.setTarget(Camera.Target.ORIGIN);
                 }
+                break;
+            case KeyEvent.VK_W:
+                // nao funciona no modo de longe
+                balls[0].setPosition(balls[0].getX() + counter, balls[0].getY(), balls[0].getZ());
+                System.out.println("X = " + balls[0].getX());
+                break;
+
+            case KeyEvent.VK_S:
+                // nao funciona no modo de longe
+                balls[0].setPosition(balls[0].getX() - counter, balls[0].getY(), balls[0].getZ());
+                System.out.println("X = " + balls[0].getX());
+                break;
+
+            case KeyEvent.VK_A:
+                balls[0].setPosition(balls[0].getX(), balls[0].getY(), balls[0].getZ() - counter);
+                System.out.println("Z = " + balls[0].getZ());
+                break;
+
+            case KeyEvent.VK_D:
+                balls[0].setPosition(balls[0].getX(), balls[0].getY(), balls[0].getZ() + counter);
+                System.out.println("Z = " + balls[0].getZ());
+                break;
+
+            case KeyEvent.VK_B:
+                if (camera.getTarget() == Camera.Target.ORIGIN) return;
+
+                float[] normal = cue.cameraBallVector;
+                float speedX = normal[0];
+                float speedZ = normal[2];
+                balls[0].setSpeed(speedX * 0.03f, speedZ * 0.03f);
+                System.out.println("CUE");
+                System.out.println(speedX + " - " + speedZ);
+                camera.setTarget(Camera.Target.ORIGIN);
         }
     }
 

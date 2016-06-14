@@ -103,34 +103,37 @@ public class Ball extends Actor {
         bx = x;
         bz = z;
 
-        if (x + vx + Ball.radius >= 0.5f  && z + vz + Ball.radius >= 1.045f)  inRole = true;
-        if (x + vx + Ball.radius >= 0.5f  && z + vz - Ball.radius <= -0.925f) inRole = true;
-        if (x + vx - Ball.radius <= -0.5f && z + vz - Ball.radius <= -0.925f) inRole = true;
-        if (x + vx - Ball.radius <= -0.5f && z + vz + Ball.radius >= 1.045f)  inRole = true;
-        if (x + vx - Ball.radius <= -0.5f && z + vz + Ball.radius >= 0.4625f) inRole = true;
-        if (x + vx - Ball.radius >= 0.5f && z + vz + Ball.radius >= 0.4625f)  inRole = true;
+        // por enquanto nao encacapa a branca
+        if (ID > 0) {
+            if (x + vx >= 0.43f && z + vz >= 0.95f) inRole = true;
+            if (x + vx >= 0.43f && z + vz <= -0.97f) inRole = true;
+            if (x + vx <= -0.47f && z + vz <= -0.97f) inRole = true;
+            if (x + vx <= -0.47f && z + vz >= 0.95f) inRole = true;
+            if (x + vx <= -0.47f && Math.abs(z + vz) <= 0.02f) inRole = true;
+            if (x + vx >= 0.43f && Math.abs(z + vz) <= 0.02f) inRole = true;
+        }
 
         if (reverse) {
             x -= vx;
             z -= vz;
 
-            if (x + vx + Ball.radius > 0.5f || x + vx - Ball.radius < -0.5f) {
+            if (x + vx > 0.47f || x + vx < -0.47f) {
                 vx *= -1;
             }
 
-            if (z + vz + Ball.radius > 1.045f || z + vz - Ball.radius < -0.925f) {
+            if (z + vz > 0.97f || z + vz < -0.97f) {
                 vz *= -1;
             }
 
             return;
         }
 
-        if (x + vx + Ball.radius >= 0.5f || x + vx - Ball.radius <= -0.5f) {
+        if (x + vx >= 0.43f || x + vx <= -0.47f) {
             vx *= -1;
             decay *= 2; // colisão aumenta atrito
         }
 
-        if (z + vz + Ball.radius >= 1.045f || z + vz - Ball.radius <= -0.925f) {
+        if (z + vz >= 0.97f || z + vz <= -0.97f) {
             vz *= -1;
             decay *= 2; // colisão aumenta atrito
         }

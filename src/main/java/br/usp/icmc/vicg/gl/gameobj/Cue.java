@@ -16,7 +16,7 @@ public class Cue extends Actor {
     Matrix4 modelMatrix;
     Ball whiteBall;
     Camera camera;
-    private float[] cameraBallVector;
+    public float[] cameraBallVector;
     public Cue(float x, float y, float z, Ball whiteBall, Camera camera) {
         super(x, y, z);
         this.whiteBall = whiteBall;
