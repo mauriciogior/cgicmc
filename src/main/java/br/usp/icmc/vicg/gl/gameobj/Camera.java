@@ -64,7 +64,7 @@ public class Camera extends Actor {
             x = (float) (defaultX * Math.sin(rotationAngle));
             z = (float) (defaultZ * Math.cos(rotationAngle));
             viewMatrix.lookAt(
-                    x, defaultY, z,
+                    x, defaultY + 1, z,
                     0, 0, 0,
                     0, 1, 0);
         }

@@ -40,7 +40,7 @@ public class Ball extends Actor {
 
     public static final float decay = 0.00005f;
     public static final float x0 = -1 * (((radius * 5) + (radius * 5/2)) / 2);
-    public static final float y0 = 0.4f;
+    public static final float y0 = 0.35f;
     public static final float z0 = -0.5f;
     public float vx;
     public float vz;

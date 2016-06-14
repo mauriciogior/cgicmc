@@ -30,9 +30,9 @@ public class PoolGame extends KeyAdapter implements GLEventListener {
 
     private final Shader shader; // Gerenciador dos shaders
     private final PoolTable poolTable;
+    private final Floor[] floors;
     private final Cue cue;
     private final Ball[] balls;
-    private final TableSurface tableSurface;
     private final Camera camera;
     private final Light light;
 
@@ -42,19 +42,22 @@ public class PoolGame extends KeyAdapter implements GLEventListener {
 
         // declara os objetos e suas posições
         poolTable = new PoolTable(0, 0, 0);
-        tableSurface = new TableSurface(0, 0, 0);
+        floors = new Floor[4];
         balls = new Ball[16];
 
         balls[0] = new Ball(Ball.x0, Ball.y0, Ball.z0, 0);
         camera = new Camera(2, 1.5f, 2, balls[0]);
         cue = new Cue(0, 0.5f, 0, balls[0], camera);
         balls[0].resetPosition();
-        balls[0].setSpeed(-0.0055f, -0.065f);
 
         for(int i = 1; i < balls.length; i++) {
             balls[i] = new Ball(Ball.x0, Ball.y0, Ball.z0, i);
             balls[i].resetPosition();
         }
+        floors[0] = new Floor(4, -0.4f, 4);
+        floors[1] = new Floor(-4, -0.4f, 4);
+        floors[2] = new Floor(4, -0.4f, -4);
+        floors[3] = new Floor(-4, -0.4f, -4);
 
         light = new Light();
     }
@@ -83,7 +86,10 @@ public class PoolGame extends KeyAdapter implements GLEventListener {
         camera.init(gl, shader);
         poolTable.init(gl, shader);
         cue.init(gl, shader);
-        tableSurface.init(gl, shader);
+        floors[0].init(gl, shader);
+        floors[1].init(gl, shader);
+        floors[2].init(gl, shader);
+        floors[3].init(gl, shader);
 
         for(int i = 0; i < balls.length; i++) {
             balls[i].init(gl, shader);
@@ -112,8 +118,11 @@ public class PoolGame extends KeyAdapter implements GLEventListener {
         camera.draw();
 
         poolTable.draw();
+        floors[0].draw();
+        floors[1].draw();
+        floors[2].draw();
+        floors[3].draw();
         cue.draw();
-        //tableSurface.draw();
         balls[0].draw();
 
         for(int i = 1; i < balls.length; i++) {
@@ -143,8 +152,11 @@ public class PoolGame extends KeyAdapter implements GLEventListener {
     @Override
     public void dispose(GLAutoDrawable drawable) {
         poolTable.erase();
+        floors[0].erase();
+        floors[1].erase();
+        floors[2].erase();
+        floors[3].erase();
         cue.erase();
-        tableSurface.erase();
     }
     float counter = 0.005f;
     @Override
