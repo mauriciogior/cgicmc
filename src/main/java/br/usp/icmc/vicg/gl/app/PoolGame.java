@@ -1,13 +1,7 @@
 package br.usp.icmc.vicg.gl.app;
 
 import br.usp.icmc.vicg.gl.core.Light;
-import br.usp.icmc.vicg.gl.core.Material;
 import br.usp.icmc.vicg.gl.gameobj.*;
-import br.usp.icmc.vicg.gl.jwavefront.JWavefrontObject;
-import br.usp.icmc.vicg.gl.matrix.Matrix4;
-import br.usp.icmc.vicg.gl.model.Cube;
-import br.usp.icmc.vicg.gl.model.SimpleModel;
-import br.usp.icmc.vicg.gl.model.Square;
 import br.usp.icmc.vicg.gl.util.Shader;
 import br.usp.icmc.vicg.gl.util.ShaderFactory;
 import br.usp.icmc.vicg.gl.util.ShaderFactory.ShaderType;
@@ -21,10 +15,6 @@ import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
-import java.io.File;
-import java.io.IOException;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
 public class PoolGame extends KeyAdapter implements GLEventListener {
 

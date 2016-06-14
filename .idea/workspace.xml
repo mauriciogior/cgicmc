@@ -2,42 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a493bfef-6557-4d84-a0cd-032f3fa6dfb8" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/br/usp/icmc/vicg/gl/app/Example01.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/br/usp/icmc/vicg/gl/app/Example02.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/br/usp/icmc/vicg/gl/app/Example03.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/br/usp/icmc/vicg/gl/app/Example04.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/br/usp/icmc/vicg/gl/app/Example05.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/br/usp/icmc/vicg/gl/app/Example06.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/br/usp/icmc/vicg/gl/app/Example07.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/br/usp/icmc/vicg/gl/app/Example08.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/br/usp/icmc/vicg/gl/app/Example09.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/br/usp/icmc/vicg/gl/app/Example10.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/br/usp/icmc/vicg/gl/app/Example11.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/br/usp/icmc/vicg/gl/app/Example12.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/br/usp/icmc/vicg/gl/app/Example13.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/br/usp/icmc/vicg/gl/app/Example14.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/br/usp/icmc/vicg/gl/app/Example15.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/br/usp/icmc/vicg/gl/app/Example16.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/br/usp/icmc/vicg/gl/app/Example17.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/br/usp/icmc/vicg/gl/app/SimpleScene.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/br/usp/icmc/vicg/gl/ex/Main.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/br/usp/icmc/vicg/gl/ex/SimpleScene.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/br/usp/icmc/vicg/gl/gameobj/TableSurface.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/br/usp/icmc/vicg/gl/model/Circle.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/br/usp/icmc/vicg/gl/model/Cube.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/br/usp/icmc/vicg/gl/model/NormalMappingRectangle.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/br/usp/icmc/vicg/gl/model/Rectangle.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/br/usp/icmc/vicg/gl/model/SimpleModel.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/br/usp/icmc/vicg/gl/model/SolidSphere.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/br/usp/icmc/vicg/gl/model/Sphere.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/br/usp/icmc/vicg/gl/model/Square.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/br/usp/icmc/vicg/gl/model/TextureRectangle.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/br/usp/icmc/vicg/gl/model/TextureSimpleModel.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/br/usp/icmc/vicg/gl/model/Triangle.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/br/usp/icmc/vicg/gl/model/WiredCube.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/br/usp/icmc/vicg/gl/raytracing/RayTracing.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/br/usp/icmc/vicg/gl/util/ExercicioViewing3D.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/usp/icmc/vicg/gl/app/PoolGame.java" afterPath="$PROJECT_DIR$/src/main/java/br/usp/icmc/vicg/gl/app/PoolGame.java" />
     </list>
     <ignored path="cg2014.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -60,16 +25,17 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="PoolGame.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="PoolGame.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/br/usp/icmc/vicg/gl/app/PoolGame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="179">
-              <caret line="207" column="31" selection-start-line="207" selection-start-column="31" selection-end-line="207" selection-end-column="31" />
+            <state relative-caret-position="269">
+              <caret line="16" column="34" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
               <folding>
-                <element signature="e#6464#6831#0" expanded="true" />
-                <element signature="e#6590#6797#0" expanded="true" />
-                <element signature="e#6796#6797#0" expanded="true" />
-                <element signature="e#6830#6831#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#6083#6450#0" expanded="true" />
+                <element signature="e#6209#6416#0" expanded="true" />
+                <element signature="e#6415#6416#0" expanded="true" />
+                <element signature="e#6449#6450#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -100,7 +66,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Camera.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Camera.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/br/usp/icmc/vicg/gl/gameobj/Camera.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-265">
@@ -151,8 +117,8 @@
         <option value="$PROJECT_DIR$/src/main/java/br/usp/icmc/vicg/gl/gameobj/Floor.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/usp/icmc/vicg/gl/gameobj/Ball.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/usp/icmc/vicg/gl/gameobj/Cue.java" />
-        <option value="$PROJECT_DIR$/src/main/java/br/usp/icmc/vicg/gl/app/PoolGame.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/usp/icmc/vicg/gl/gameobj/Camera.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/usp/icmc/vicg/gl/app/PoolGame.java" />
       </list>
     </option>
   </component>
@@ -865,16 +831,16 @@
       <workItem from="1465838744863" duration="9821000" />
       <workItem from="1465863991626" duration="10183000" />
       <workItem from="1465877617716" duration="3240000" />
-      <workItem from="1465884851217" duration="8381000" />
+      <workItem from="1465884851217" duration="9303000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="127761000" />
+    <option name="totallyTimeSpent" value="128683000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -887,7 +853,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32898173" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19583334" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19583334" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32898173" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1239,19 +1205,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/usp/icmc/vicg/gl/app/PoolGame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="207" column="31" selection-start-line="207" selection-start-column="31" selection-end-line="207" selection-end-column="31" />
-          <folding>
-            <element signature="e#6464#6831#0" expanded="true" />
-            <element signature="e#6590#6797#0" expanded="true" />
-            <element signature="e#6796#6797#0" expanded="true" />
-            <element signature="e#6830#6831#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/br/usp/icmc/vicg/gl/gameobj/Camera.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-265">
@@ -1267,6 +1220,20 @@
         <state relative-caret-position="68">
           <caret line="4" column="32" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="32" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/usp/icmc/vicg/gl/app/PoolGame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="269">
+          <caret line="16" column="34" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#6083#6450#0" expanded="true" />
+            <element signature="e#6209#6416#0" expanded="true" />
+            <element signature="e#6415#6416#0" expanded="true" />
+            <element signature="e#6449#6450#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
