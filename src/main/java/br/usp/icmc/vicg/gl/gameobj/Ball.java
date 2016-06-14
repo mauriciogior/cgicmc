@@ -105,12 +105,12 @@ public class Ball extends Actor {
 
         // por enquanto nao encacapa a branca
         if (ID > 0) {
-            if (x + vx >= 0.43f && z + vz >= 0.95f) inRole = true;
-            if (x + vx >= 0.43f && z + vz <= -0.97f) inRole = true;
-            if (x + vx <= -0.47f && z + vz <= -0.97f) inRole = true;
-            if (x + vx <= -0.47f && z + vz >= 0.95f) inRole = true;
-            if (x + vx <= -0.47f && Math.abs(z + vz) <= 0.02f) inRole = true;
-            if (x + vx >= 0.43f && Math.abs(z + vz) <= 0.02f) inRole = true;
+            if (x + vx >= 0.46f && z + vz >= 0.95f) inRole = true;
+            if (x + vx >= 0.46f && z + vz <= -0.95f) inRole = true;
+            if (x + vx <= -0.46f && z + vz <= -0.95f) inRole = true;
+            if (x + vx <= -0.46f && z + vz >= 0.95f) inRole = true;
+            if (x + vx <= -0.46f && Math.abs(z + vz) <= 0.02f) inRole = true;
+            if (x + vx >= 0.46f && Math.abs(z + vz) <= 0.02f) inRole = true;
         }
 
         if (reverse) {
@@ -128,7 +128,7 @@ public class Ball extends Actor {
             return;
         }
 
-        if (x + vx >= 0.43f || x + vx <= -0.47f) {
+        if (x + vx >= 0.47f || x + vx <= -0.47f) {
             vx *= -1;
             decay *= 2; // colisão aumenta atrito
         }

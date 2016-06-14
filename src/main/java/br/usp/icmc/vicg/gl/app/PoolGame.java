@@ -155,10 +155,10 @@ public class PoolGame extends KeyAdapter implements GLEventListener {
             case KeyEvent.VK_PAGE_DOWN:
                 break;
             case KeyEvent.VK_LEFT://gira sobre o eixo-y
-                camera.rotate((float) (Math.PI) * -0.04f);
+                camera.rotate((float) (Math.PI) * -0.02f);
                 break;
             case KeyEvent.VK_RIGHT://gira sobre o eixo-y
-                camera.rotate((float) (Math.PI) * 0.04f);
+                camera.rotate((float) (Math.PI) * 0.02f);
                 break;
             case KeyEvent.VK_SPACE:
                 if(camera.getTarget() == Camera.Target.ORIGIN) {
@@ -167,27 +167,6 @@ public class PoolGame extends KeyAdapter implements GLEventListener {
                 else {
                     camera.setTarget(Camera.Target.ORIGIN);
                 }
-                break;
-            case KeyEvent.VK_W:
-                // nao funciona no modo de longe
-                balls[0].setPosition(balls[0].getX() + counter, balls[0].getY(), balls[0].getZ());
-                System.out.println("X = " + balls[0].getX());
-                break;
-
-            case KeyEvent.VK_S:
-                // nao funciona no modo de longe
-                balls[0].setPosition(balls[0].getX() - counter, balls[0].getY(), balls[0].getZ());
-                System.out.println("X = " + balls[0].getX());
-                break;
-
-            case KeyEvent.VK_A:
-                balls[0].setPosition(balls[0].getX(), balls[0].getY(), balls[0].getZ() - counter);
-                System.out.println("Z = " + balls[0].getZ());
-                break;
-
-            case KeyEvent.VK_D:
-                balls[0].setPosition(balls[0].getX(), balls[0].getY(), balls[0].getZ() + counter);
-                System.out.println("Z = " + balls[0].getZ());
                 break;
 
             case KeyEvent.VK_B:
