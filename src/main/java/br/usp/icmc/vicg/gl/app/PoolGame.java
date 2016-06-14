@@ -111,21 +111,8 @@ public class PoolGame extends KeyAdapter implements GLEventListener {
         tableSurface.draw();
         whiteBall.draw();
         for(int i = 1; i <= 15; i++) {
-            if(test >= 90) {
-                balls[i].rotate(1, 0, 0);
-                if(test == 180)
-                {
-                    test = 0;
-                }
-            }
-            else
-            {
-                balls[i].rotate(0, 1, 0);
-            }
             balls[i].draw();
         }
-        System.out.println("iteration");
-        test++;
 
         // Força execução das operações declaradas
         gl.glFlush();
