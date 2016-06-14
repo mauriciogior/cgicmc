@@ -54,7 +54,7 @@ public class Cue extends Actor {
         modelMatrix.rotate(rotationZ, 0, 0, 1);
         modelMatrix.scale(sizeX, sizeY, sizeZ);
         modelMatrix.bind();
-        if(visible) {
+        if(visible && camera.getTarget() == Camera.Target.WHITEBALL) {
             model.draw();
         }
     }
