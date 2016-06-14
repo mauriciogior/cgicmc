@@ -34,7 +34,6 @@ public class PoolGame extends KeyAdapter implements GLEventListener {
     private final Shader shader; // Gerenciador dos shaders
     private final PoolTable poolTable;
     private final Ball[] balls;
-    private final Ball whiteBall;
     private final TableSurface tableSurface;
     private final Camera camera;
     private final Light light;
@@ -48,9 +47,14 @@ public class PoolGame extends KeyAdapter implements GLEventListener {
         poolTable = new PoolTable(0, 0, 0);
         tableSurface = new TableSurface(0, 0, 0);
         balls = new Ball[16];
-        whiteBall = new Ball(-1, 0.4f, 0, 0);
-        for(int i = 1; i <= 15; i++) {
-            balls[i] = new Ball(-1 + (i * 0.08f), 0.4f, 0, i);
+
+        balls[0] = new Ball(Ball.x0, Ball.y0, Ball.z0, 0);
+        balls[0].resetPosition();
+        balls[0].setSpeed(-0.035f, -0.065f);
+
+        for(int i = 1; i < balls.length; i++) {
+            balls[i] = new Ball(Ball.x0, Ball.y0, Ball.z0, i);
+            balls[i].resetPosition();
         }
 
         light = new Light();
@@ -80,8 +84,8 @@ public class PoolGame extends KeyAdapter implements GLEventListener {
         camera.init(gl, shader);
         poolTable.init(gl, shader);
         tableSurface.init(gl, shader);
-        whiteBall.init(gl, shader);
-        for(int i = 1; i <=15; i++) {
+
+        for(int i = 0; i < balls.length; i++) {
             balls[i].init(gl, shader);
         }
 
@@ -109,9 +113,15 @@ public class PoolGame extends KeyAdapter implements GLEventListener {
 
         poolTable.draw();
         tableSurface.draw();
-        whiteBall.draw();
-        for(int i = 1; i <= 15; i++) {
+        balls[0].draw();
+        for(int i = 1; i < balls.length; i++) {
             balls[i].draw();
+        }
+
+        for (int i = 0; i < balls.length - 1; i++) {
+            for (int j = 0; j < balls.length; j++) {
+                if (j != i) balls[i].collision(balls[j]);
+            }
         }
 
         // Força execução das operações declaradas
