@@ -49,7 +49,7 @@ public class PoolGame extends KeyAdapter implements GLEventListener {
         camera = new Camera(2, 1.5f, 2, balls[0]);
         cue = new Cue(0, 0.5f, 0, balls[0], camera);
         balls[0].resetPosition();
-        balls[0].setSpeed(-0.035f, -0.065f);
+        balls[0].setSpeed(-0.0055f, -0.065f);
 
         for(int i = 1; i < balls.length; i++) {
             balls[i] = new Ball(Ball.x0, Ball.y0, Ball.z0, i);
@@ -115,12 +115,19 @@ public class PoolGame extends KeyAdapter implements GLEventListener {
         cue.draw();
         tableSurface.draw();
         balls[0].draw();
+
         for(int i = 1; i < balls.length; i++) {
+            if (balls[i].inRole) continue;
+
             balls[i].draw();
         }
 
         for (int i = 0; i < balls.length - 1; i++) {
+            if (balls[i].inRole) continue;
+
             for (int j = 0; j < balls.length; j++) {
+                if (balls[j].inRole) continue;
+
                 if (j != i) balls[i].collision(balls[j]);
             }
         }
