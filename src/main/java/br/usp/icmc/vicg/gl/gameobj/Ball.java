@@ -14,9 +14,11 @@ import java.util.logging.Logger;
 // diametro = 6 cm
 public class Ball extends Actor {
     private JWavefrontObject model;
+    private JWavefrontObject shadowModel;
     private Matrix4 modelMatrix;
     private Matrix4 rotationMatrix;
     private Matrix4 ballSystemMatrix;
+    private static final String shadowPath = "./data/balls/shadow.obj";
     private static final String[] paths = {
             "./data/balls/ball00.obj",
             "./data/balls/ball01.obj",
@@ -105,10 +107,10 @@ public class Ball extends Actor {
 
         // por enquanto nao encacapa a branca
         if (ID > 0) {
-            if (x + vx >= 0.46f && z + vz >= 0.95f) inRole = true;
-            if (x + vx >= 0.46f && z + vz <= -0.95f) inRole = true;
-            if (x + vx <= -0.46f && z + vz <= -0.95f) inRole = true;
-            if (x + vx <= -0.46f && z + vz >= 0.95f) inRole = true;
+            if (x + vx >= 0.44f && z + vz >= 0.93f) inRole = true;
+            if (x + vx >= 0.44f && z + vz <= -0.93f) inRole = true;
+            if (x + vx <= -0.44f && z + vz <= -0.93f) inRole = true;
+            if (x + vx <= -0.44f && z + vz >= 0.93f) inRole = true;
             if (x + vx <= -0.46f && Math.abs(z + vz) <= 0.02f) inRole = true;
             if (x + vx >= 0.46f && Math.abs(z + vz) <= 0.02f) inRole = true;
         }
@@ -272,6 +274,15 @@ public class Ball extends Actor {
 
         if (visible && !inRole) {
             model.draw();
+        }
+
+        modelMatrix.loadIdentity();
+        modelMatrix.translate(x + 0.005f, y - radius + 0.01f, z + 0.005f);
+        modelMatrix.scale(sizeX, sizeY, sizeZ);
+        modelMatrix.bind();
+
+        if (visible && !inRole) {
+            shadowModel.draw();
             updatePosition(false, false);
         }
     }
@@ -286,6 +297,7 @@ public class Ball extends Actor {
     public void erase() {
         if (visible) {
             model.dispose();
+            shadowModel.dispose();
         }
         visible = false;
     }
@@ -293,6 +305,7 @@ public class Ball extends Actor {
     @Override
     public void init(GL3 gl, Shader shader) {
         model = new JWavefrontObject(new File(paths[ID]));
+        shadowModel = new JWavefrontObject(new File(shadowPath));
         modelMatrix = new Matrix4();
         rotationMatrix = new Matrix4();
         ballSystemMatrix = new Matrix4();
@@ -302,6 +315,10 @@ public class Ball extends Actor {
             model.init(gl, shader);
             model.unitize();
             model.dump();
+
+            shadowModel.init(gl, shader);
+            shadowModel.unitize();
+            shadowModel.dump();
         }
         catch (IOException ex) {
             Logger.getLogger(PoolGame.class.getName()).log(Level.SEVERE, null, ex);

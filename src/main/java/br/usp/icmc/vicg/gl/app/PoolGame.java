@@ -2,6 +2,7 @@ package br.usp.icmc.vicg.gl.app;
 
 import br.usp.icmc.vicg.gl.core.Light;
 import br.usp.icmc.vicg.gl.gameobj.*;
+import br.usp.icmc.vicg.gl.jwavefront.JWavefrontObject;
 import br.usp.icmc.vicg.gl.util.Shader;
 import br.usp.icmc.vicg.gl.util.ShaderFactory;
 import br.usp.icmc.vicg.gl.util.ShaderFactory.ShaderType;
@@ -22,6 +23,7 @@ public class PoolGame extends KeyAdapter implements GLEventListener {
     private final PoolTable poolTable;
     private final Floor[] floors;
     private final Cue cue;
+    private final Ball[] sticks;
     private final Ball[] balls;
     private final Camera camera;
     private final Light light;
@@ -34,6 +36,7 @@ public class PoolGame extends KeyAdapter implements GLEventListener {
         poolTable = new PoolTable(0, 0, 0);
         floors = new Floor[4];
         balls = new Ball[16];
+        sticks = new Ball[40];
 
         balls[0] = new Ball(Ball.x0, Ball.y0, Ball.z0, 0);
         camera = new Camera(2, 1.5f, 2, balls[0]);
@@ -43,6 +46,11 @@ public class PoolGame extends KeyAdapter implements GLEventListener {
         for(int i = 1; i < balls.length; i++) {
             balls[i] = new Ball(Ball.x0, Ball.y0, Ball.z0, i);
             balls[i].resetPosition();
+        }
+
+        for(int i = 0; i < sticks.length; i++) {
+            sticks[i] = new Ball(Ball.x0, Ball.y0, Ball.z0, 0);
+            sticks[i].setSize(0.01f, 0.01f, 0.01f);
         }
         floors[0] = new Floor(4, -0.4f, 4);
         floors[1] = new Floor(-4, -0.4f, 4);
@@ -85,6 +93,10 @@ public class PoolGame extends KeyAdapter implements GLEventListener {
             balls[i].init(gl, shader);
         }
 
+        for(int i = 0; i < sticks.length; i++) {
+            sticks[i].init(gl, shader);
+        }
+
         //init the light
         light.init(gl, shader);
         light.setPosition(new float[]{0, 5, 0, 0});
@@ -119,6 +131,12 @@ public class PoolGame extends KeyAdapter implements GLEventListener {
             if (balls[i].inRole) continue;
 
             balls[i].draw();
+        }
+
+        for(int i = 0; i < sticks.length; i++) {
+            if (sticks[i].inRole) continue;
+
+            sticks[i].draw();
         }
 
         for (int i = 0; i < balls.length - 1; i++) {
@@ -158,13 +176,20 @@ public class PoolGame extends KeyAdapter implements GLEventListener {
                 break;
             case KeyEvent.VK_LEFT://gira sobre o eixo-y
                 camera.rotate((float) (Math.PI) * -0.01f);
+                if(camera.getTarget() == Camera.Target.WHITEBALL) {
+                    drawTrajectory();
+                }
                 break;
             case KeyEvent.VK_RIGHT://gira sobre o eixo-y
                 camera.rotate((float) (Math.PI) * 0.01f);
+                if(camera.getTarget() == Camera.Target.WHITEBALL) {
+                    drawTrajectory();
+                }
                 break;
             case KeyEvent.VK_SPACE:
                 if(camera.getTarget() == Camera.Target.ORIGIN) {
                     camera.setTarget(Camera.Target.WHITEBALL);
+                    drawTrajectory();
                 }
                 else {
                     camera.setTarget(Camera.Target.ORIGIN);
@@ -174,7 +199,56 @@ public class PoolGame extends KeyAdapter implements GLEventListener {
             case KeyEvent.VK_B:
                 if (camera.getTarget() == Camera.Target.ORIGIN) return;
                 cue.shoot();
+                clearTrajectory();
                 break;
+        }
+    }
+
+    private void clearTrajectory() {
+        for (int i=0; i<sticks.length; i++) {
+            sticks[i].inRole = true;
+        }
+    }
+
+    private void drawTrajectory() {
+        Ball simulation = new Ball(Ball.x0, Ball.y0, Ball.z0, 0);
+
+        simulation.setPosition(balls[0].getX(), balls[0].getY(), balls[0].getZ());
+
+        float[] cameraBallVector = cue.getNormal(new float[]{balls[0].getX() - camera.getX(), 0,
+                balls[0].getZ() - camera.getZ()});
+
+        simulation.setSpeed(cameraBallVector[0] * 0.03f, cameraBallVector[2] * 0.03f);
+
+        boolean collided = false;
+
+        int i = 0, skip = 0, last = 0;
+
+        while (simulation.getSpeed() != 0 && !collided && i < sticks.length) {
+            simulation.updatePosition(false, false);
+
+            for (int j = 1; j < balls.length; j++) {
+                if (balls[j].inRole) continue;
+
+                if (simulation.collided(balls[j])) {
+                    collided = true;
+                    last = i;
+                    break;
+                }
+            }
+
+            skip++;
+
+            if (skip > 1) {
+                sticks[i].setPosition(simulation.getX(), simulation.getY(), simulation.getZ());
+                sticks[i].inRole = false;
+                i++;
+                skip = 0;
+            }
+        }
+
+        for (i=last; i<sticks.length && last > 0; i++) {
+            sticks[i].inRole = true;
         }
     }
 

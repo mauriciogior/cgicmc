@@ -42,7 +42,7 @@ public class Cue extends Actor {
         }
     }
 
-    private float[] getNormal(float[] vector) {
+    public float[] getNormal(float[] vector) {
         float denominator = vector[0] * vector[0] + vector[1] * vector[1] + vector[2] * vector[2];
         denominator = (float) Math.sqrt((double) denominator);
         return new float[]{vector[0] / denominator, vector[1] / denominator, vector[2] / denominator};
